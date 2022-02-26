@@ -29,6 +29,23 @@ var responsiveSlider = function () {
         slideList.style.left = "0px";
         count = 1;
     });
+    document.querySelectorAll('a').forEach((x) => {
+        x.addEventListener('click', () => {
+            if (this.innerWidth <= 850) {
+                document.querySelector('.nav-links').style.transform = 'translateX(100%)';
+                document.querySelector('#burger2').style.display = "block";
+                document.querySelector('#burger').style.display = "block";
+                document.querySelector('#burger').style.transform = `translateX(0)`;
+                document.querySelector('#burger2').style.transform = `translateX(50px)`;
+            }
+            else {
+                document.querySelector('#burger2').style.display = "none";
+                document.querySelector('#burger').style.display = "none";
+                document.querySelector('.nav-links').style.transform = 'translateX(0)';
+            }
+            document.querySelector('html').style.overflow = "scroll";
+        })
+    })
 
     var prevSlide = function () {
         if (count > 1) {
