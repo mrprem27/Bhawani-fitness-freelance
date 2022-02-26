@@ -13,7 +13,7 @@ var responsiveSlider = function () {
 
     window.addEventListener('resize', function () {
         sliderWidth = slider.offsetWidth;
-        if (this.innerWidth <= 850 && bool) {
+        if (this.innerWidth <= 850) {
             document.querySelector('.nav-links').style.transform = 'translateX(100%)';
         }
         else {
