@@ -17,7 +17,7 @@ img {
 .posts-hero {
   width: 100%;
   height: calc(90vh - 70px);
-  background-image: url("/images/posts_hero.jpg");
+  background-image: url("../images/posts_hero.jpg");
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.841);
   background-color: rgb(255, 255, 255);
   background-position: center;
@@ -92,7 +92,7 @@ img {
     width: 100%;
     text-align: center;
 
-     padding-top: 25vh;
+    padding-top: 25vh;
   }
   .posts {
     padding: 20px 5.5%;

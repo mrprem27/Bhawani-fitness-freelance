@@ -17,7 +17,7 @@ img {
 .aboutyoga-hero {
   width: 100%;
   height: calc(90vh - 70px);
-  background-image: url("/images/herof.jpg");
+  background-image: url("../images/herof.jpg");
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.841);
   /* background: rgb(41, 41, 41);
   background: linear-gradient(
