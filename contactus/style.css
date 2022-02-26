@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+}
+.contactus-hero {
+  width: 100%;
+  height: calc(90vh - 70px);
+  background-image: url("/images/contactus.jfif");
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.841);
+  color: white;
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactus-hero-heading {
+  margin-left: 80px;
+  max-width: 60%;
+  width: max-content;
+  padding-top: 30vh;
+}
+/* heading */
+.contactus-hero-heading > h2 {
+  font-size: 50px;
+}
+
+.contactus-form {
+  display: flex;
+  margin: 30vh 0;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.459);
+  justify-content: center;
+  height: 300px;
+}
+.contactus-form > img {
+  height: 600px;
+  width: 600px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.533);
+}
+.contactus-form > form > h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contactus-form > form {
+  display: flex;
+  align-items: center;
+  /* width: 40%; */
+  position: relative;
+  /* bottom: 30px; */
+  left: 50px;
+  background-color: white;
+  width: 500px;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.401);
+  border-radius: 2px;
+  /* border: 1px solid black; */
+  flex-direction: column;
+}
+.contactus-form > form > input[type="submit"] {
+  padding: 3px 16px;
+  font-size: 22px;
+  margin-top: 1vh;
+  width: max-content;
+  background-color: black;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.486);
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.637); */
+}
+.contactus-form > form > input {
+  border: none;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 14px;
+  border-bottom: 2px solid black;
+}
+.contactus-form > form > textarea {
+  border: none;
+  resize: none;
+  padding: 8px;
+  width: 100%;
+  font-size: 14px;
+  border-bottom: 2px solid black;
+}
+.contactus-form > form > input:focus {
+  outline: none;
+}
+.contactus-form > form > textarea:focus {
+  outline: none;
+}
+.home-footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  background-color: black;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+.contacts > a > img {
+  width: 70px;
+}
+.contacts > a {
+  border-radius: 50%;
+  width: min-content;
+  margin: 20px 15px;
+  background-color: rgb(28, 118, 202);
+}
+.contacts-cover {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-evenly;
+}
+.handle {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 25px;
+}
+.contactus-map {
+  width: 97%;
+  justify-content: center;
+  margin: 40px 0;
+  /* flex-direction: column; */
+  align-items: center;
+  display: flex;
+}
+.contactus-map > iframe {
+  width: 80vw;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
+  margin-bottom: 20px;
+  height: 30vw;
+}
+#contactus-map-c {
+  /* background-color: white; */
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 25px;
+  /* color: black; */
+}
+.contactus-map > div {
+  /* text-align: center; */
+  padding: 0 40px;
+  width: 40%;
+  margin-bottom: 40px;
+}
+#contactus-ads {
+  width: 100%;
+}
+@media screen and (max-width: 1120px) {
+  .contactus-form {
+    margin: 27vh 0;
+    height: 220px;
+  }
+  .contactus-form > img {
+    height: 400px;
+    width: 400px;
+  }
+  .contactus-form > form > h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5vh;
+  }
+  .contactus-form > form {
+    left: 3vw;
+    background-color: white;
+    width: 350px;
+    padding: 3vw;
+  }
+  .contactus-form > form > input[type="submit"] {
+    padding: 3px 7px;
+    font-size: 15px;
+    margin-top: 1.2vh;
+  }
+  .contactus-form > form > input {
+    padding: 4px;
+    font-size: 12.5px;
+  }
+  .contactus-form > form > textarea {
+    padding: 4px;
+    font-size: 12.5px;
+  }
+  .contacts > a > img {
+    width: 52px;
+  }
+  .contacts > a {
+    margin: 14px 10px;
+    background-color: rgb(28, 118, 202);
+  }
+  .contacts-cover {
+    margin: 20px 0;
+  }
+  .handle {
+    padding: 8px 0;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contactus-hero {
+    height: calc(85vh - 70px);
+  }
+  .contactus-hero-heading {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 20vh;
+  }
+  /* heading */
+  .contactus-hero-heading > h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .contactus-form {
+    margin: 23vh 0;
+    height: 220px;
+  }
+  .contactus-form > img {
+    height: 270px;
+    width: 270px;
+  }
+  .contactus-form > form > h2 {
+    font-size: 20px;
+    margin-bottom: 1vh;
+  }
+  .contactus-form > form {
+    left: 3.8vw;
+    width: 300px;
+  }
+  .contactus-form > form > input[type="submit"] {
+    padding: 2px 4px;
+    font-size: 13.2px;
+  }
+  .contactus-form > form > input {
+    padding: 3px;
+    font-size: 11.5px;
+  }
+  .contactus-form > form > textarea {
+    padding: 2.1px;
+    font-size: 11.5px;
+  }
+  .contacts > a > img {
+    width: 40px;
+  }
+  .contacts > a {
+    margin: 10px 6px;
+  }
+  .contacts-cover {
+    margin: 10px 0;
+    margin-bottom: 20px;
+  }
+  .handle {
+    padding: 4px 0;
+    font-size: 18px;
+  }
+  .contactus-map > div {
+    /* width: 100%; */
+    padding: 5px 8px;
+    font-size: 13.5px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .contactus-hero-heading {
+    padding-top: 18vh;
+    text-shadow: 1px 1px 2px black;
+  }
+  .contactus-hero-heading > h2 {
+    font-size: 38px;
+  }
+  .contactus-form {
+    height: 150px;
+  }
+  .contactus-form > img {
+    height: 180px;
+    display: none;
+    width: 180px;
+  }
+  .contactus-form > form {
+    width: 80%;
+    left: 0;
+    padding: 15px 10px;
+  }
+  .contactus-form > form > input {
+    font-size: 14px;
+  }
+  .contactus-form > form > textarea {
+    font-size: 14px;
+  }
+  .contactus-map {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .contactus-map > div {
+    /* text-align: center; */
+    padding: 0 40px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  #contactus-ads {
+    width: 100%;
+  }
+  .contactus-map > iframe {
+    width: 94%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 8px;
+    height: 40vw;
+  }
+  .contactus-map {
+    margin: 0;
+  }
+  .contacts > a > img {
+    width: 30px;
+  }
+  .contacts > a {
+    margin: 5px;
+  }
+}
+@media screen and (max-width:420px) {
+  .contactus-form>form{
+    width: 95%;
+  }
+}

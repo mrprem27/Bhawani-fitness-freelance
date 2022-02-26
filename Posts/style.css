@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  display: block;
+}
+.posts-hero {
+  width: 100%;
+  height: calc(90vh - 70px);
+  background-image: url("/images/posts_hero.jpg");
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.841);
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.posts-hero-heading {
+  margin-left: 80px;
+  width: 50%;
+  padding-top: 30vh;
+}
+/* heading */
+.posts-hero-heading > h2 {
+  font-size: 50px;
+}
+.posts {
+  padding: 40px 5.5%;
+}
+.posts > div {
+  width: 100%;
+  margin: 40px 0;
+  box-shadow: 0 0 13px rgba(156, 156, 156, 0.452);
+  border-radius: 5px;
+  padding: 30px 4%;
+}
+.posts > div > img {
+  width: 100%;
+  background-blend-mode: luminosity;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  background-size: cover;
+  object-fit: contain;
+  height: 400px;
+}
+.posts > div > div > a {
+  padding: 6px 12px;
+  width: max-content;
+  height: max-content;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+  background-color: gray;
+  color: white;
+  font-size: medium;
+  border-radius: 3px;
+}
+.posts > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0;
+  line-height: 30px;
+  align-items: center;
+  width: 100%;
+}
+.posts > div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.posts > div > h2 {
+  margin: 18px 10px;
+  font-size: 29px;
+}
+.posts > div > p {
+  margin: 10px;
+}
+@media screen and (max-width: 740px) {
+  .posts-hero {
+    height: calc(80vh - 55px);
+  }
+  .posts-hero-heading {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+
+     padding-top: 25vh;
+  }
+  .posts {
+    padding: 20px 5.5%;
+  }
+  .posts > div {
+    margin: 20px 0;
+    padding: 15px 4%;
+  }
+  .posts > div > img {
+    height: 300px;
+  }
+  .posts > div > div > a {
+    padding: 2px 8px;
+  }
+  .posts > div > div {
+    margin: 25px 0;
+    line-height: 32px;
+  }
+  .posts > div > h2 {
+    margin: 18px 10px;
+    font-size: 22px;
+  }
+  .posts > div > p {
+    margin: 10px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .home-footer {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 570px) {
+  .posts {
+    padding: 10px 5.5%;
+  }
+  em {
+    font-size: 14px;
+  }
+  .posts > div > img {
+    height: 250px;
+  }
+  .posts > div > div {
+    margin: 20px 0;
+    line-height: 32px;
+  }
+  .posts > div > h2 {
+    margin: 15px 7px;
+    font-size: 18px;
+  }
+  .posts > div > p {
+    margin: 7px;
+    line-height: 20px;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+  }
+  .home-footer {
+    font-size: x-small;
+  }
+}
+@media screen and (max-width: 470px) {
+  .posts-hero {
+    height: calc(75vh -55px);
+  }
+  .posts-hero-heading > h2 {
+    font-size: 33px;
+  }
+  .posts-hero-heading {
+    margin-left: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 22vh;
+  }
+  .posts {
+    padding: 8px 2.5%;
+  }
+  .posts > div > img {
+    height: 150px;
+  }
+  .posts > div > div > a {
+    padding: 0 4px;
+    font-size: small;
+  }
+  em {
+    font-size: 13px;
+  }
+  .posts > div > div {
+    margin: 15px 0;
+    line-height: 30px;
+  }
+  .posts > div > h2 {
+    margin: 15px 7px;
+    font-size: 17px;
+  }
+  .posts > div > p {
+    margin: 7px;
+    line-height: 18px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+  }
+  .home-footer {
+    font-size: x-small;
+  }
+}

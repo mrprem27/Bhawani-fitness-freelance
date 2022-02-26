@@ -1,0 +1,917 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  display: block;
+}
+.nav {
+  padding: 4px 8px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+#burger {
+  display: none;
+  width: 31px;
+  z-index: 5;
+  transition: all 0.4s ease-in-out;
+  margin-right: 10px;
+}
+.nav-links {
+  margin-right: 5%;
+  z-index: 4;
+  /* display: flex;
+  justify-content: space-between; */
+  width: max-content;
+  font-size: 20.2px;
+}
+.nav-links > a {
+  margin: 0 2.3vw;
+}
+
+.home-hero {
+  width: 100%;
+  height: calc(90vh - 70px);
+  background-image: url("./images/herox.jpg");
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.841);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-hero-heading {
+  margin-left: 80px;
+  width: min-content;
+  padding-top: 18vh;
+}
+/* heading */
+.home-hero-heading > h2 {
+  font-size: 70px;
+  line-height: 67px;
+  width: max-content;
+  margin-bottom: 1vh;
+}
+.home-hero-heading > h3 {
+  font-size: 20px;
+  width: max-content;
+  margin-bottom: 1vh;
+}
+.home-hero-heading > p {
+  font-size: 16px;
+  margin: 8px 0;
+  margin-bottom: 3vh;
+}
+.home-hero-heading > a,
+.home-btn > div > a {
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+  background-color: gray;
+  color: white;
+  font-size: large;
+  border-radius: 3px;
+}
+/* our servies */
+.home-services {
+  width: 100%;
+  display: flex;
+  margin: 70px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.home-services > h3 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.home-services-boxes {
+  display: flex;
+  width: 73%;
+  justify-content: space-between;
+}
+.home-service-box {
+  width: 330px;
+  border-radius: 3px;
+  margin: 30px 0;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.301);
+  /* border: 2px solid gray; */
+}
+.home-service-box > div {
+  padding: 25px 9%;
+}
+.home-service-box > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.home-service-box > div > h6 {
+  font-size: 18px;
+  margin: 7px 0;
+}
+.home-service-box > div > p {
+  line-height: 23px;
+}
+
+/* about yoga */
+.home-yoga {
+  margin: auto;
+  /* background: rgb(41, 41, 41);
+  background: linear-gradient(
+    21deg,
+    rgba(51, 51, 51, 0.726) 10%,
+    rgba(246, 246, 246, 0.781) 100%
+  ); */
+  width: 100%;
+  /* border-radius: 8px; */
+  line-height: 34px;
+  text-align: center;
+}
+.home-yoga > div {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 48%;
+}
+.home-yoga > div > h1 {
+  font-size: 44px;
+  /* width: max-content; */
+  padding-bottom: 20px;
+  /* border-bottom: 2px solid black; */
+  margin-bottom: 30px;
+}
+.home-yoga > div > p {
+  font-size: 17px;
+}
+.home-img-2 {
+  width: 50%;
+  margin: auto;
+}
+/* crousel */
+.home-crousel {
+  width: 98.9vw;
+}
+#slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.171);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+#slider ul li img {
+  height: 600px;
+  width: 98.9vw;
+  object-fit: cover;
+}
+#slider #prev,
+#slider #next {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+/* benefits */
+.home-benefits {
+  display: flex;
+  /* color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.775);
+  background: rgb(41, 41, 41);
+  background: linear-gradient(
+    21deg,
+    rgba(41, 41, 41, 0.753) 18%,
+    rgba(246, 246, 246, 1) 100%
+  ); */
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+.home-benefits > img {
+  width: 30vw;
+}
+.home-benefits > div > p {
+  font-size: 30px;
+  /* font-weight: 900; */
+  width: max-content;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  text-decoration: overline;
+  /* border-bottom: 2px solid black; */
+}
+.home-benefits > div {
+  width: 60%;
+}
+.home-benefits > div > ul {
+  margin: 15px 0;
+  font-size: large;
+  line-height: 40px;
+  list-style: none;
+}
+/* .home-benefits > div > ul > li {
+  font-family:;
+} */
+.home-benefits > div > ul > li::before {
+  content: "~";
+  font-size: x-large;
+  /* color: rgb(255, 255, 255); */
+  /* text-shadow: 1.2px 1px 3px black; */
+}
+
+/* our servies */
+.home-testimonials {
+  width: 100%;
+  display: flex;
+  margin: 70px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.home-testimonials > h3 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.home-testimonial-box > div > q {
+  font-size: smaller;
+}
+.home-testimonials-boxes {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  margin: auto;
+}
+.home-testimonial-box {
+  border-radius: 3px;
+  display: flex;
+  width: 30%;
+  /* align-items: center; */
+  margin: 20px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.301);
+  /* border: 2px solid gray; */
+  padding: 20px;
+}
+
+.home-testimonial-box > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.home-testimonial-box > div > h6 {
+  font-size: 18px;
+  margin: 7px 0;
+}
+.home-testimonial-box > div > p {
+  line-height: 23px;
+}
+
+.home-iframe {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.home-iframe > h5 {
+  font-size: 30px;
+  padding: 10px 0;
+  /* color: white; */
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603); */
+  width: 100%;
+  text-align: center;
+  /* background-color: gray; */
+}
+.home-iframe > iframe {
+  width: 60vw;
+  margin: 40px 0;
+  height: 33.75vw;
+}
+/* btn */
+.home-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.925);
+  background-blend-mode: luminosity;
+  background-image: url("./images/home_bg_2.png");
+}
+.home-btn > span {
+  background-color: rgba(54, 54, 54, 0.87);
+  border-radius: 7px;
+  width: min-content;
+  margin-right: 13%;
+}
+.home-btn > div {
+  display: flex;
+  flex-direction: column;
+}
+.home-btn > div > a {
+  margin: 10px 0;
+  box-shadow: 1px 1px 1px black;
+  text-align: center;
+  padding: 8px 1vw;
+  font-size: 1.4vw;
+}
+.home-btn > div > div > a {
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.967); */
+  border: 3px inset rgba(0, 0, 0, 0.445);
+  background-color: rgb(29, 80, 189);
+  border-radius: 50%;
+  margin: 0 6px;
+  width: 4.2vw;
+}
+.home-btn > div > div > a > img {
+  width: 100%;
+}
+.home-btn > div > div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.home-btn > span > img {
+  width: 20vw;
+  border-radius: 7px;
+  bottom: 2vw;
+  right: 2vw;
+  position: relative;
+}
+.home-footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  background-color: black;
+}
+.home-img-3 {
+  background-image: url("./images/home_yoga_3.jpg");
+  height: 400px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.911);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.home-img-3 > p {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.842);
+  font-weight: 700;
+  width: 70%;
+}
+@media screen and (max-width: 1500px) {
+  .home-services-boxes {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .home-services-boxes {
+    width: 90%;
+  }
+  .home-testimonial-box {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .home-services-boxes {
+    width: 98%;
+  }
+  #slider ul li img {
+    height: 500px;
+  }
+  #slider {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .home-yoga > div {
+    width: 60%;
+  }
+  .home-hero-heading {
+    margin-left: 40px;
+    width: 45%;
+  }
+  .home-benefits > img {
+    display: none;
+  }
+  .home-benefits > div {
+    width: 90%;
+  }
+  /* our servies */
+
+  .home-services-boxes {
+    width: 96%;
+  }
+  .home-service-box {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home-yoga > div {
+    width: 60%;
+  }
+  .home-benefits > img {
+    display: none;
+  }
+  .home-benefits > div {
+    width: 90%;
+  }
+  /* our servies */
+  .home-services {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .home-services > h3 {
+    font-size: 22.5px;
+    margin: 20px 0;
+  }
+  .home-services-boxes {
+    width: 93%;
+    flex-direction: column;
+    justify-content: unset;
+  }
+  .home-service-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+    height: 100%;
+  }
+  .home-service-box > div {
+    padding: 3%;
+  }
+  .home-service-box > img {
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+  }
+  .home-service-box > div > h6 {
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .home-service-box > div > p {
+    line-height: 23px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav {
+    padding: 3px 6px;
+    height: 55px;
+    width: 100%;
+
+    position: absolute; /* top: 0; */
+    /* position: fixed; */
+  }
+  #burger {
+    position: relative;
+    display: block;
+  }
+  .nav > img {
+    width: 55px;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding-top: 55px;
+    background-color: rgba(173, 173, 173, 0.952);
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    display: flex;
+    line-height: 40px;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+    flex-direction: column;
+  }
+  .nav-links > a {
+    padding: 10px 10px;
+    width: 100%;
+    color: white;
+    text-shadow: 1.3px 1.3px 2px black;
+    margin: 0;
+    border-bottom: 2px solid black;
+  }
+  .home-hero {
+    height: calc(90vh - 55px);
+  }
+  .home-hero-heading {
+    width: min-content;
+    padding-top: 20vh;
+  }
+  /* heading */
+  .home-hero-heading > h2 {
+    font-size: 40px;
+    width: max-content;
+    line-height: 40px;
+  }
+  .home-hero-heading > h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .home-hero-heading > p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .home-hero-heading > a,
+  .home-btn > div > a {
+    padding: 5px 10px;
+    font-size: medium;
+    border-radius: 2px;
+  }
+  #slider ul li img {
+    width: 100vw;
+  }
+  .home-crousel {
+    width: 100vw;
+  }
+  /* about yoga */
+  .home-yoga {
+    line-height: 30px;
+  }
+  .home-yoga > div {
+    padding: 30px 0;
+    width: 68%;
+  }
+  .home-yoga > div > h1 {
+    font-size: 34px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .home-yoga > div > p {
+    font-size: 15.5px;
+  }
+  /* benefits */
+  .home-benefits {
+    padding: 40px 0;
+  }
+  .home-benefits > div > p {
+    font-size: 22px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+  .home-benefits > div {
+    width: 94%;
+  }
+  .home-benefits > div > ul {
+    margin: 15px 0;
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .home-benefits > div > ul > li::before {
+    font-size: large;
+  }
+
+  #slider ul li img {
+    height: 400px;
+  }
+  #slider {
+    height: 400px;
+  }
+  /* testimonials */
+  .home-testimonials {
+    margin-top: 20px;
+  }
+  .home-testimonials > h3 {
+    font-size: 26px;
+  }
+  .home-testimonial-box > div > q {
+    font-size: small;
+  }
+  .home-testimonial-box {
+    border-radius: 3px;
+    display: flex;
+    width: 44%;
+    align-items: center;
+    margin: 12px 0;
+    padding: 14px;
+  }
+
+  .home-testimonial-box > img {
+    width: 70px;
+    height: 70px;
+  }
+  .home-testimonial-box > div > h6 {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .home-testimonial-box > div > p {
+    line-height: 22px;
+  }
+  .home-iframe {
+    margin-top: 30px;
+  }
+  .home-iframe > h5 {
+    font-size: 18px;
+  }
+  .home-iframe > iframe {
+    width: 70vw;
+    margin: 30px 0;
+    height: 39.37vw;
+  }
+  /* btn */
+  .home-btn {
+    padding: 20px 0;
+  }
+  .home-btn > span {
+    margin-right: 13%;
+  }
+  .home-btn > div > a {
+    margin: 5px 0;
+    padding: 4px 1vw;
+    font-size: 2vw;
+  }
+  .home-btn > div > div > a {
+    width: 6vw;
+  }
+  .home-btn > div > div {
+    margin-top: 5px;
+  }
+  .home-btn > span > img {
+    width: 25vw;
+  }
+  .home-footer {
+    font-size: small;
+    padding: 7px;
+  }
+  .home-img-3 {
+    background-image: url("./images/home_yoga_3.jpg");
+    height: 200px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-benefits > div > ul {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .home-hero {
+    height: calc(80vh - 55px);
+  }
+  .home-hero-heading {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+  }
+  /* heading */
+  .home-hero-heading > h2 {
+    font-size: 40px;
+    width: max-content;
+    line-height: 35px;
+  }
+  .home-hero-heading > h3 {
+    font-size: 14px;
+    /* background-color: gra; */
+    margin-bottom: 10px;
+  }
+  .home-hero-heading > p {
+    display: none;
+  }
+  .home-hero-heading > a {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* testimonials */
+  .nav-links {
+    width: 80%;
+  }
+  .home-testimonials > h3 {
+    font-size: 23px;
+  }
+  .home-testimonial-box {
+    border-radius: 3px;
+    display: flex;
+    width: 90%;
+  }
+  .home-yoga {
+    line-height: 25px;
+  }
+  .home-yoga > div {
+    padding: 20px 0;
+    width: 70%;
+  }
+  .home-yoga > div > h1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .home-yoga > div > p {
+    font-size: 14px;
+  }
+  /* benefits */
+  .home-benefits {
+    padding: 40px 0;
+  }
+  .home-benefits > div > p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .home-benefits > div {
+    width: 96%;
+  }
+  .home-benefits > div > ul {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .home-benefits > div > ul > li::before {
+    font-size: medium;
+  }
+
+  #slider ul li img {
+    height: 350px;
+  }
+  #slider {
+    height: 350px;
+  }
+  .home-footer {
+    font-size: x-small;
+    padding: 7px;
+  }
+  .home-img-3 {
+    height: 200px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home-hero {
+    height: calc(75vh - 55px);
+  }
+  .home-hero-heading {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .home-hero-heading > h3 {
+    width: 100%;
+    text-align: center;
+  }
+  /* our servies */
+  .home-services {
+    margin: 10px 0;
+  }
+  #slider #prev,
+  #slider #next {
+    font-size: 18px;
+    width: 25px;
+    line-height: 25px;
+  }
+  #slider #prev {
+    left: 0;
+  }
+  #slider #next {
+    right: 0;
+  }
+  .home-services > h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .home-services-boxes {
+    width: 95%;
+  }
+  .home-service-box {
+    display: block;
+  }
+  .home-service-box > img {
+    width: 100%;
+  }
+  .home-service-box > div > h6 {
+    font-size: 17px;
+    margin: 5px 0;
+  }
+  .home-service-box > div > p {
+    line-height: 21px;
+    font-size: 12px;
+  }
+  /* about yoga */
+  .home-yoga > div {
+    width: 95%;
+  }
+  .home-yoga > div > h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .home-yoga > div > p {
+    font-size: 13.5px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  /* benefits */
+  .home-benefits > div > p {
+    font-size: 14.8px;
+  }
+  .home-benefits > div > ul > li {
+    line-height: 20px;
+    margin: 10px 0;
+  }
+  .home-benefits > div > ul > li::before {
+    font-size: large;
+  }
+  #slider ul li img {
+    height: 280px;
+  }
+  #slider {
+    height: 280px;
+  }
+  .home-testimonial-box {
+    width: 96%;
+  }
+  .home-iframe {
+    margin-top: 30px;
+  }
+  .home-iframe > h5 {
+    font-size: 18px;
+  }
+  .home-iframe > iframe {
+    width: 70vw;
+    margin: 30px 0;
+    height: 39.37vw;
+  }
+  /* btn */
+  .home-btn {
+    margin-top: -40px;
+    padding: 20px 0;
+  }
+  .home-btn > span {
+    margin-right: 4%;
+  }
+  .home-btn > div > a {
+    padding: 4px 2vw;
+    font-size: 3.3vw;
+  }
+  .home-btn > div > div {
+    margin-top: 5px;
+  }
+  .home-btn > span > img {
+    width: 30vw;
+  }
+  .home-btn > div > div > a {
+    width: 9.5vw;
+  }
+  .home-footer {
+    font-size: small;
+    padding: 7px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home-footer {
+    font-size: 6px;
+  }
+}
