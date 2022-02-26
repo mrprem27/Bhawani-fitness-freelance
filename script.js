@@ -25,6 +25,7 @@ var responsiveSlider = function () {
             document.querySelector('#burger').style.display = "none";
             document.querySelector('.nav-links').style.transform = 'translateX(0)';
         }
+        document.querySelector('html').style.overflow = "scroll";
         slideList.style.left = "0px";
         count = 1;
     });

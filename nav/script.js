@@ -12,6 +12,7 @@ window.addEventListener('resize', function () {
         document.querySelector('#burger').style.display = "none";
         document.querySelector('.nav-links').style.transform = 'translateX(0)';
     }
+    document.querySelector('html').style.overflow = "scroll";
     setTimeout(() => {
         document.querySelector('#burger').style.transform = `translateX(0)`;
     }, 400)
