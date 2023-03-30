@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  display: block;
+}
+.nav {
+  padding: 4px 8px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  margin-right: 5%;
+  /* display: flex;
+  justify-content: space-between; */
+  width: max-content;
+  font-size: 20.2px;
+}
+.nav-links > a {
+  margin: 0 2.3vw;
+}
+.aboutyoga-hero {
+  width: 100%;
+  height: calc(90vh - 70px);
+  background-image: url("/images/herof.jpg");
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.841);
+  /* background: rgb(41, 41, 41);
+  background: linear-gradient(
+    220deg,
+    rgba(41, 41, 41, 0.726) 18%,
+    rgba(246, 246, 246, 1) 100%
+  ); */
+  background-color: rgb(255, 255, 255);
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.aboutyoga-hero-heading {
+  margin-left: 80px;
+  width: 36%;
+  padding-top: 200px;
+}
+/* heading */
+.aboutyoga-hero-heading > h2 {
+  font-size: 50px;
+}
+.aboutyoga {
+  padding: 40px 60px;
+}
+.aboutyoga > h1 {
+  font-size: 50px;
+}
+.aboutyoga > h5 {
+  font-size: 29px;
+  margin: 20px 0;
+}
+.aboutyoga > ul {
+  list-style: square;
+  padding-left: 20px;
+  line-height: 29px;
+}
+.aboutyoga li{
+   word-spacing: 1.2px;
+  letter-spacing: 1.2px;
+}
+.aboutyoga > p {
+  word-spacing: 3px;
+  line-height: 25px;
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+.home-footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  background-color: black;
+}
+#aboutyoga-bg{
+  width: 100%;
+  box-shadow: 0 0 5px black;
+}
